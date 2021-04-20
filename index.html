@@ -4,106 +4,741 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Bootstrap/Bootstrap/css/bootstrap.css">
-    <title>[EGANY Front-end 2021]</title>
-    <link rel="stylesheer" href="./style.css">
+    <title>EGANY 2021</title>
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-web/fontawesome-free-5.15.2-web/css/all.min.css">
+    
 </head>
 <body>
-    <!-- Phần đầu -->
-    <div class="container">
-        <div class="header">
-            <div class="topnav" id="myTopnav">
-                <img src="images/Logo-BeeYou.png" alt="logo" id="logo"/>
-                <a href="#Home" class="active">Trang Chủ</a>
-                <a href="#ToteCollection">Tote Collection</a>
-                <a href="#Aboutus">Về chúng tôi</a>
-                <a href="#Contact">Liên hệ</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-                </a>
-                <img src="images/Group 16.png"  id="shopping" alt="Ảnh giỏ hàng"/>
+    <div class="main">
+        <header class="header">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-10 m-10 c-6">
+                        <ul class="header-list">
+                            <li class="header-item">
+                                <a href="" class="header-item__link hide-on-tablet">
+                                    <img src="./assets/img/Logo-BeeYou.png" alt="Logo">
+                                </a>
+                            </li>
+                            <li class="header-item hide-on-mobile">
+                                <a href="" class="header-item__link">Trang chủ</a>
+                            </li>
+                            <li class="header-item hide-on-mobile">
+                                <a href="" class="header-item__link">Tote collection</a>
+                            </li>
+                            <li class="header-item hide-on-mobile">
+                                <a href="" class="header-item__link">Về chúng tôi</a>
+                            </li>
+                            <li class="header-item hide-on-mobile">
+                                <a href="" class="header-item__link">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2 m-2 c-6">
+                        <ul class="header-list right">
+                            <li class="header-item">
+                                <div class="header__cart-wrap">
+                                    <img src="./assets/img/cart.png" alt="" class="header__cart-icon">
+                                    <span class="header__cart-notice">2</span>
+                                </div> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header__slider">
+                <div class="grid wide">
+                    <img src="./assets/img/slider.png" alt="" class="header__slider-img">
+                </div>
+            </div>
+            <div class="header__pagination">
+                <div class="grid wide">
+                    <ul class="header__pagination-icon">
+                        <li class="header__pagination-item no--active"></li>
+                        <li class="header__pagination-item accept--active"></li>
+                        <li class="header__pagination-item no--active"></li>
+                        <li class="header__pagination-item no--active"></li>
+                        <li class="header__pagination-item no--active"></li>
+                    </ul> 
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-5 m-12 c-12">
+                        <div class="container__content">
+                            <h3 class="content__heading">Tote của BeeYou cam kết mang đến sự hài lòng tối đa cho bạn</h3>                            
+                        </div>
+                    </div>
+                    <div class="col l-3 m-12 c-12">
+                        <ul class="container__content">
+                            <div class="container__description">
+                                <img src="./assets/img/bg-iconyellow.png" alt="" class="container__description-icon">
+                                <!-- <img src="./assets/img/iconyellow.png" alt="" class="container__description-icon desc-img1"> -->
+                                <!-- <img src="./assets/img/woman.png" alt="" class="container__description-icon desc-img2"> -->
+                                <!-- <img src="./assets/img/iconyellow.png" alt="" class="container__description-icon desc-img3"> -->
+                            </div> 
+                        </ul>
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <div class="container__description">
+                            <span class="sub__content">
+                                Với cộng đồng nhà thiết kế, chúng tôi là ngôi nhà thời trang,nơi chắp cánh cho hàng vạn mẫu thiết kế của các Designer trên khắp Vietnam.<br><br>
+                                Với khách hàng, BeeYou là nơi bạn dễ dàng tìm thấy những những sản phẩm thời trang thể hiện CHẤT  của riêng mình. Là chính mình cùng BeeYou.<br><br>
+                                Với đội ngũ lâu năm kinh nghiệm, có tâm với nghề, những dòng sản phẩm của BeeYou được tuyển chọn những nguyên vật liệu cao cấp nhất, gia công tinh xảo, công nghệ tối tân nhất hiện nay, được kiểm tra chất lượng đầu ra khắt khe.
+                            </span>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row down">
+                    <div class="col l-6 m-12 c-12">
+                        <div class="container__content">
+                            <h3 class="content__heading">Siêu phẩm Tote mới ra lò</h3>
+                            <span class="sub__content">Mới "chế" ra cái Tote mới các bác ạ. Thông tin mô tả sơ bộ các bác đọc ở dưới nhé. em đi đóng hàng giao cho khách phát</span>
+                        </div>
+                        <div class="container__content">
+                            <div class="box">
+                                <h4 class="box__title">Thông tin mô tả sơ bộ</h4>
+                                    <div class="title__pink"></div>
+                                    <div class="box__text-icon">
+                                        <div class="box__text">
+                                            <img src="./assets/img/layers/1.png" alt="" class="box-icon">
+                                            Chất vải canvas mềm mịn, không xù, không nhão
+                                        </div>
+                                        <div class="box__text">
+                                            <img src="./assets/img/layers/2.png" alt="" class="box-icon">
+                                            Bee có 5 màu cho bạn lựa canh: Xanh dương, Hồng baby, Vàng chanh,...
+                                        </div>
+                                        <div class="box__text">
+                                            <img src="./assets/img/layers/3.png" alt="" class="box-icon">
+                                            Size túi: 38*34*7cm
+                                        </div>
+                                        <div class="box__text">
+                                            <img src="./assets/img/layers/4.png" alt="" class="box-icon">
+                                            Túi có khoá kéo, túi con tiện lợi cho nàng sử dụng
+                                        </div>
+                                        <button class="btn-box"><h3>Tìm hiểu thêm</h3></button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="container__content">
+                            <div class="container__description">
+                                <img src="./assets/img/mainright/bg-elip.png" alt="" class="container__description-icon">
+                                <!-- <img src="./assets/img/iconyellow.png" alt="" class="container__description-icon desc-img1"> -->
+                                <!-- <img src="./assets/img/woman.png" alt="" class="container__description-icon desc-img2"> -->
+                                <!-- <img src="./assets/img/iconyellow.png" alt="" class="container__description-icon desc-img3"> -->
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="row down">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="container__content">
+                            <h3 class="content__heading">Tote giá “nóng”</h3>                           
+                            <span class="sub__content">Đống này đang giảm giá nên rất "nóng”. Bạn còn chờ gì nữa mà "phỏng tay” ngay đi</span>                           
+                        </div>
+                    </div>
+                    <div class="col l-3 m-12 c-12">
+                        <div class="container__content">
+                            <div class="totebox__newbox">
+                                <img src="./assets/img/Toteprice/toteprice1.png" alt="" class="totebox__new-img">
+                                <p class="totebox__newbox-heaading">Túi Totes Cactus Bag nữ tính xành điệu</p>
+                                <span class="totebox__newbox-price">320.000 đ</span>
+                                <nav class="totebox__new-pagination">
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link pink_EF9CD6"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link blue_85CEF2"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link yellow_F4EA88"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link white_FFF"></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-12 c-12">
+                        <div class="container__content">
+                            <div class="totebox__newbox box--active">
+                                <img src="./assets/img/Toteprice/toteprice2.png" alt="" class="totebox__new-img">
+                                <p class="totebox__newbox-heaading">Túi Totes Cactus Bag nữ tính xành điệu</p>
+                                <span class="totebox__newbox-price">320.000 đ</span>
+                                <nav class="totebox__new-pagination">
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link pink_EF9CD6"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link blue_85CEF2"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link yellow_F4EA88"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link white_FFF"></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <button class="btn-tote"><span class="tote-btn-text">Mua ngay</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-12 c-12">
+                        <div class="container__content">
+                            <div class="totebox__newbox">
+                                <img src="./assets/img/Toteprice/toteprice3.png" alt="" class="totebox__new-img">
+                                <p class="totebox__newbox-heaading">Túi Totes Cactus Bag nữ tính xành điệu</p>
+                                <span class="totebox__newbox-price">320.000 đ</span>
+                                <nav class="totebox__new-pagination">
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link pink_EF9CD6"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link blue_85CEF2"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link yellow_F4EA88"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link white_FFF"></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-12 c-12">
+                        <div class="container__content">
+                            <div class="totebox__newbox">
+                                <img src="./assets/img/Toteprice/toteprice4.png" alt="" class="totebox__new-img">
+                                <p class="totebox__newbox-heaading">Túi Totes Cactus Bag nữ tính xành điệu</p>
+                                <span class="totebox__newbox-price">320.000 đ</span>
+                                <nav class="totebox__new-pagination">
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link pink_EF9CD6"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link blue_85CEF2"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link yellow_F4EA88"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link white_FFF"></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row down">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="container__content">
+                            <h3 class="content__heading">Tote bán chạy</h3>                           
+                            <span class="sub__content">Ra bao nhiêu hàng cũng bán không kịp với mấy cô mà, mà cứ như vậy là Bee thích à nha, hehe</span>                           
+                        </div>
+                    </div>
+                    <div class="col l-3 m-12 c-12">
+                        <div class="container__content">
+                            <div class="totebox__newbox">
+                                <img src="./assets/img/Toteprice/totesold1.png" alt="" class="totebox__new-img">
+                                <p class="totebox__newbox-heaading">Túi Totes Cactus Bag nữ tính xành điệu</p>
+                                <span class="totebox__newbox-price">320.000 đ</span>
+                                <nav class="totebox__new-pagination">
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link pink_EF9CD6"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link blue_85CEF2"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link yellow_F4EA88"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link white_FFF"></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-12 c-12">
+                        <div class="container__content">
+                            <div class="totebox__newbox box--active">
+                                <img src="./assets/img/Toteprice/totesold2.png" alt="" class="totebox__new-img">
+                                <p class="totebox__newbox-heaading">Túi Totes Cactus Bag nữ tính xành điệu</p>
+                                <span class="totebox__newbox-price">320.000 đ</span>
+                                <nav class="totebox__new-pagination">
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link pink_EF9CD6"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link blue_85CEF2"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link yellow_F4EA88"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link white_FFF"></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <button class="btn-tote"><span class="tote-btn-text">Mua ngay</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-12 c-12">
+                        <div class="container__content">
+                            <div class="totebox__newbox">
+                                <img src="./assets/img/Toteprice/totesold3.png" alt="" class="totebox__new-img">
+                                <p class="totebox__newbox-heaading">Túi Totes Cactus Bag nữ tính xành điệu</p>
+                                <span class="totebox__newbox-price">320.000 đ</span>
+                                <nav class="totebox__new-pagination">
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link pink_EF9CD6"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link blue_85CEF2"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link yellow_F4EA88"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link white_FFF"></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-12 c-12">
+                        <div class="container__content">
+                            <div class="totebox__newbox">
+                                <img src="./assets/img/Toteprice/totesold4.png" alt="" class="totebox__new-img">
+                                <p class="totebox__newbox-heaading">Túi Totes Cactus Bag nữ tính xành điệu</p>
+                                <span class="totebox__newbox-price">320.000 đ</span>
+                                <nav class="totebox__new-pagination">
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link pink_EF9CD6"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link blue_85CEF2"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link yellow_F4EA88"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link white_FFF"></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row down">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="container__content">
+                            <h3 class="content__heading">Tote nổi bật</h3>                           
+                            <span class="sub__content">Ra bao nhiêu hàng cũng bán không kịp với mấy cô mà, mà cứ như vậy là Bee thích à nha, hehe</span>                           
+                        </div>
+                    </div>
+                    <div class="col l-3 m-12 c-12">
+                        <div class="container__content">
+                            <div class="totebox__newbox">
+                                <img src="./assets/img/Toteprice/totesold1.png" alt="" class="totebox__new-img">
+                                <p class="totebox__newbox-heaading">Túi Totes Cactus Bag nữ tính xành điệu</p>
+                                <span class="totebox__newbox-price">320.000 đ</span>
+                                <nav class="totebox__new-pagination">
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link pink_EF9CD6"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link blue_85CEF2"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link yellow_F4EA88"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link white_FFF"></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-12 c-12">
+                        <div class="container__content">
+                            <div class="totebox__newbox box--active">
+                                <img src="./assets/img/Toteprice/totesold2.png" alt="" class="totebox__new-img">
+                                <p class="totebox__newbox-heaading">Túi Totes Cactus Bag nữ tính xành điệu</p>
+                                <span class="totebox__newbox-price">320.000 đ</span>
+                                <nav class="totebox__new-pagination">
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link pink_EF9CD6"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link blue_85CEF2"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link yellow_F4EA88"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link white_FFF"></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <button class="btn-tote"><span class="tote-btn-text">Mua ngay</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-12 c-12">
+                        <div class="container__content">
+                            <div class="totebox__newbox">
+                                <img src="./assets/img/Toteprice/totesold3.png" alt="" class="totebox__new-img">
+                                <p class="totebox__newbox-heaading">Túi Totes Cactus Bag nữ tính xành điệu</p>
+                                <span class="totebox__newbox-price">320.000 đ</span>
+                                <nav class="totebox__new-pagination">
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link pink_EF9CD6"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link blue_85CEF2"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link yellow_F4EA88"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link white_FFF"></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-12 c-12">
+                        <div class="container__content">
+                            <div class="totebox__newbox">
+                                <img src="./assets/img/Toteprice/totesold4.png" alt="" class="totebox__new-img">
+                                <p class="totebox__newbox-heaading">Túi Totes Cactus Bag nữ tính xành điệu</p>
+                                <span class="totebox__newbox-price">320.000 đ</span>
+                                <nav class="totebox__new-pagination">
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link pink_EF9CD6"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link blue_85CEF2"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link yellow_F4EA88"></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="totebox__new-pagination-list">
+                                        <li class="totebox__new-pagination-item">
+                                            <a href="" class="totebox__new-pagination-link white_FFF"></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Phần thân -->
-        <div class="main">
-            <div class="content">
-                <img src="./images/Rectangle3.png" class="responsives" alt="">
-                <div class="circle">
-                    <div class="item item1">_</div>
-                    <div class="item item2">_</div>
-                    <div class="item item3">_</div>
-                    <div class="item item4">_</div>
-                    <div class="item item5">_</div>
+        <!-- Reviewer -->
+        <div class="grid">
+            <div class="row down review-img">
+                <div class="col l-5 m-12 c-12">
+                    <div class="container__content">
+                        <img src="./assets/img/review/review.png" alt="review-img">
+                    </div>
+                </div>
+                <div class="col l-7 m-12 c-12">
+                    <div class="container__content">
+                        <div class="review__customer home-product">
+                            <p class="content__heading">Đánh giá của các nàng</p>
+                            <span class="sub__content">Mấy đánh giá này là lấy từ facebook qua nè, không có tự bịa ra đâu nha. Hông tin lên facebook mà xem.</span>
+                        </div>
+                        <div class="review-product">
+                            <div class="row sm-gutter">
+                                <div class="col l-6 m-4 c-6 ">
+                                <!-- product item -->
+                                    <div class="home-product-item__img">
+                                        <img src="./assets/img/review/review1.png" alt="">
+                                        <img src="./assets/img/review/review2.png" alt="">
+                                        <img src="./assets/img/review/review3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col l-6 m-4 c-6">
+                                    <!-- product item -->
+                                    <div class="home-product-item__rating">
+                                        <span class="review__customer-icon">
+                                            <i class="icon-review fas fa-chevron-down"></i>
+                                        </span>
+                                        <span class="review__customer-icon">
+                                            <i class="icon-review fas fa-chevron-up"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="sidebar">
-                <img src="./images/Frame.png" alt="" id="pic1"> 
-                <img src="./images/Intersect.png" alt="" id="pic2" >
-                <img src="./images/Vector.png" alt="" id="pic3">
-                <img src="./images/image15.png" alt="Anh co gai" id="pic4"> 
-                <img src="./images/Vector 1.png" alt="" id="pic5"> 
-                <h2 class="content_title" id="title1">Tote của BeeYou cam kết mang đến sự hài lòng tối đa cho bạn</h2>
-                <span class="content_sub" id="sub1">
-                    Với cộng đồng nhà thiết kế, chúng tôi là ngôi nhà thời
-                    trang,nơi chắp cánh cho hàng vạn mẫu thiết kế của các
-                    Designer trên khắp Vietnam.
-                    <br><br>
-                    Với khách hàng, BeeYou là nơi bạn dễ dàng tìm thấy
-                    những những sản phẩm thời trang thể hiện CHẤT của
-                    riêng mình. Là chính mình cùng BeeYou.
-                    <br><br>
-                    Với đội ngũ lâu năm kinh nghiệm, có tâm với nghề,
-                    những dòng sản phẩm của BeeYou được tuyển chọn
-                    những nguyên vật liệu cao cấp nhất, gia công tinh xảo,
-                    công nghệ tối tân nhất hiện nay, được kiểm tra chất
-                    lượng đầu ra khắt khe.
-                    </span>
-            </div>
-            <div class="sidebar">
-                <div class="box1">
-                    <h2 class="content_title" id="title2">Siêu phẩm Tote mới ra lò</h2>
-                    <span class="content_sub" id="sub2">
-                        Mới "chế" ra cái Tote mới các bác ạ. Thông tin mô tả sơ bộ các bác đọc ở dưới nhé.
-                        em đi đóng hàng giao cho khách phát</span>
-                        <div class="box_info">
-                            <p id="info_style1"><b>Thông tin mô tả sơ bộ</b></p>
-                            <img src="./images/layers/textile 1.png" alt="" id="icon1">
-                            <img src="./images/layers/colors 1.png" alt="" id="icon2">
-                            <img src="./images/layers/fit-vertical 1.png" alt="" id="icon3">
-                            <img src="./images/layers/zipper 1.png" alt="" id="icon4">
-                            <p id="info_style2">Chất vải canvas mềm mịn, không xù, không nhão</p>
-                            <p id="info_style2">Bee có 5 màu cho bạn lựa canh: Xanh dương, Hồng baby, Vàng chanh,...</p>
-                            <p id="info_style2">Size túi: 38*34*7cm</p>
-                            <p id="info_style2">Túi có khoá kéo, túi con tiện lợi cho nàng sử dụng</p>
-                            <button class="btn-info"><b>Tìm hiểu thêm</b></button>
+            <div class="row">
+                <div class="col l-12 m-12 c-12">
+                    <div class="container__content">
+                        <h3 class="content__heading" id="bottom__title">BeeYou trên Instagram</h3>                           
+                        <div class="sub__content" id="bottom__sub">Follow BeeYou trên instagram để có cơ hội tham gia các chương trình ưu đãi dành riêng cho người dùng Instagram</div>                           
+                        <div class="bottom-img-link">
+                            <i class="fab fa-instagram"></i>
+                            <a href="instagr.am/beeyoufashion">instagr.am/beeyoufashion</a>
                         </div>
-                        <div class="">
-                            <img id="pic_Intersect"src="./images/mainright/Intersect.png" />
-                            <img id="pic_Ellipse" src="./images/mainright/Ellipse 10.png" />
-                            <img id="pic_image" src="./images/mainright/image 11.png" />
-                            <img id="pic_MaskGroup" src="./images/mainright/Mask Group.png" />
-                        </div>
-                        
+                    </div>
                 </div>
             </div>
-            <!-- <div class="Tote_price">
-                <h2>Tote giá "nóng"</h2>
-                <span class="content_title-sub" id="sub3" >Đống này đang giảm giá nên rất "nóng”. Bạn còn chờ gì nữa mà "phỏng tay” ngay đi</span>
+            <!-- <div class="row">
+                <div class="col l-1 m-12 c-12">
+                    <div class="container__content">
+                        <img src="./assets/img/pagination1.png" alt="" class="">
+                    </div>
+                </div>
+                <div class="col l-2-4 m-12 c-12">
+                    <ul class="container__content">
+                        <div class="container__description">
+                            <img src="./assets/img/pagination/pagination2.png" alt="" class="">
+                        </div> 
+                    </ul>
+                </div>
+                <div class="col l-2-4 m-12 c-12">
+                    <ul class="container__content">
+                        <div class="container__description">
+                            <img src="./assets/img/pagination3.png" alt="" class="">
+                        </div> 
+                    </ul>
+                </div>
+                <div class="col l-2-4 m-12 c-12">
+                    <ul class="container__content">
+                        <div class="container__description">
+                            <img src="./assets/img/pagination4.png" alt="" class="">
+                        </div> 
+                    </ul>
+                </div>
+                <div class="col l-2-4 m-12 c-12">
+                    <ul class="container__content">
+                        <div class="container__description">
+                            <img src="./assets/img/pagination5.png" alt="" class="">
+                        </div> 
+                    </ul>
+                </div>
+                <div class="col l-1 m-12 c-12">
+                    <div class="container__content">
+                        <img src="./assets/img/pagination6.png" alt="" class="">
+                    </div>
+                </div>
             </div> -->
+            
+            <div class="row no-gutters">
+                <div class="col l-1 m-12 c-12">
+                    <div class="container__content">
+                        <div class="box-paganition">
+                            <img src="./assets/img/pagination/pagination1.png" alt="" class="bottom__space ">
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-10 m-12 c-12">
+                    <div class="row">
+                        <div class="col l-2 m-12 c-12">
+                            <div class="container__content">
+                                <div class="box-paganition">
+                                    <img src="./assets/img/pagination/pagination2.png" alt="" class="bottom__space">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-2 m-12 c-12">
+                            <div class="container__content">
+                                <div class="box-paganition">
+                                    <img src="./assets/img/Toteprice/totesold3.png" alt="" class="bottom__space">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-2 m-12 c-12">
+                            <div class="container__content">
+                                <div class="box-paganition">
+                                    <img src="./assets/img/Toteprice/totesold1.png" alt="" class="bottom__space">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-2 m-12 c-12">
+                            <div class="container__content">
+                                <div class="box-paganition">
+                                    <img src="./assets/img/pagination/pagination3.png" alt="" class="bottom__space">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-2 m-12 c-12">
+                            <div class="container__content">
+                                <div class="box-paganition">
+                                    <img src="./assets/img/pagination/pagination4.png" alt="" class="bottom__space">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-2 m-12 c-12">
+                            <div class="container__content">
+                                <div class="box-paganition">
+                                    <img src="./assets/img/pagination/pagination5.png" alt="" class="bottom__space">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-1 m-12 c-12">
+                    <div class="container__content">
+                        <div class="box-paganition">
+                            <img src="./assets/img/pagination/pagination6.png" alt="" class="bottom__space">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <footer class="footer">
+            <div class="grid wide footer__content">
+                <div class="row">
+                    <div class="col l-8 m-12 c-12">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Sản phẩm hot</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Sản phẩm bán chạy</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hot deal tháng 12</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Anotner links</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-4 m-12 c-12">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="beebag.com.vn" class="footer-item__link">© 2020 beebag.com.vn</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__icon fab fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-
-
-
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
-        </script>
 </body>
 </html>

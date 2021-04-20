@@ -1,2 +1,0 @@
-# EGANY_Frontend_2021
-EGANY_Frontend_2021
